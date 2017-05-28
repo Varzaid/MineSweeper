@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Сапёр</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="minesweeper.js"></script>
+	<script src="jquery.min.js"></script>
+	<script src="jquery.timer.js"></script>
+	<script src="time.js"></script> 
+	
+	
+</head>
+<body>
+	<img id="loseExplosion" src="explosion.gif">
+	<img id="win" src="win.gif">
+	<form id="customBoard">
+		Размер поля:
+		<input id="boardWidth" type="number"> на <input id="boardHeight" type="number">
+		Количество мин:
+		<input id="numMines" type="number">
+		<button type="submit" onclick='Start.Timer.toggle();'>Погнали!</button>
+		<span id="stopwatch">00:00:00</span>
+
+	</form>
+	</br>
+	</br>
+	<div id="message"> </div>
+	</br>
+	<table id="board">
+	</table>
+
+
+
+</body>
+</html>
